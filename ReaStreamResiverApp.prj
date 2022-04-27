@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
-  <configuration file="C:\Users\JessyJP\Dropbox\Projects Workfiles &amp; Software\ReaStream-Standalone-Reciever\ReaStreamResiverApp.prj" location="C:\Users\JessyJP\Dropbox\Projects Workfiles &amp; Software\ReaStream-Standalone-Reciever" name="ReaStreamResiverApp" target="target.ezdeploy.standalone" target-name="Application Compiler">
+  <configuration build-checksum="648728865" file="C:\Users\JessyJP\Dropbox\Projects Workfiles &amp; Software\ReaStream-Standalone-Reciever\ReaStreamResiverApp.prj" location="C:\Users\JessyJP\Dropbox\Projects Workfiles &amp; Software\ReaStream-Standalone-Reciever" name="ReaStreamResiverApp" preferred-package-location="C:\Users\JessyJP\Dropbox\Projects Workfiles &amp; Software\ReaStream-Standalone-Reciever\ReaStreamResiverApp\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
     <param.appname>ReaStreamResiverApp</param.appname>
     <param.icon />
     <param.icons />
@@ -36,7 +36,12 @@
     <param.native.matlab>false</param.native.matlab>
     <param.checkbox>false</param.checkbox>
     <param.example />
-    <param.help.text />
+    <param.help.text>Syntax 
+	  -? 
+	 
+ Input Arguments 
+	 -?  print help on how to use the application 
+	 input arguments</param.help.text>
     <unset>
       <param.icon />
       <param.icons />
@@ -72,14 +77,23 @@
       <param.native.matlab />
       <param.checkbox />
       <param.example />
-      <param.help.text />
     </unset>
     <fileset.main>
       <file>${PROJECT_ROOT}\ReaStreamResiverApp.mlapp</file>
     </fileset.main>
     <fileset.resources />
     <fileset.package />
-    <fileset.depfun />
+    <fileset.depfun>
+      <file>${PROJECT_ROOT}\decodePlaybackLoop.m</file>
+      <file>${PROJECT_ROOT}\flushUDPbuffer.m</file>
+      <file>${PROJECT_ROOT}\Images\nga_workshop_wave_833x469.jpg</file>
+      <file>${PROJECT_ROOT}\MainProcess.m</file>
+      <file>${PROJECT_ROOT}\readReaStreameFrame.m</file>
+      <file>${PROJECT_ROOT}\readUDPbuffer.m</file>
+      <file>${PROJECT_ROOT}\ReaStreamAndroidReciever.m</file>
+      <file>${PROJECT_ROOT}\rsFrameHeader2Struct.m</file>
+      <file>${PROJECT_ROOT}\UDPdataForTesting.mat</file>
+    </fileset.depfun>
     <build-deliverables>
       <file location="${PROJECT_ROOT}\ReaStreamResiverApp\for_testing" name="splash.png" optional="false">C:\Users\JessyJP\Dropbox\Projects Workfiles &amp; Software\ReaStream-Standalone-Reciever\ReaStreamResiverApp\for_testing\splash.png</file>
       <file location="${PROJECT_ROOT}\ReaStreamResiverApp\for_testing" name="ReaStreamResiverApp.exe" optional="false">C:\Users\JessyJP\Dropbox\Projects Workfiles &amp; Software\ReaStream-Standalone-Reciever\ReaStreamResiverApp\for_testing\ReaStreamResiverApp.exe</file>
