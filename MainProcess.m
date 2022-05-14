@@ -37,7 +37,7 @@ function MainProcess(ReaStreamIDtag,driverSelection,deviceSelection,pbSampSize,V
     %% Setup the audio device with default settings
     % Check and listen for Frames
     [testFrame,STATE_FLAG_NEEDED] = readReaStreameFrame(obj);
-    while (STATE_FLAG_NEEDED ~= obj.PROCESSING_ON)
+    while (STATE_FLAG_NEEDED ~= obj.PROCESSING_ON_STATE_)
         [testFrame,STATE_FLAG_NEEDED] = readReaStreameFrame(obj);
         drawnow;
         if not(STATE_IN_LOOP_FLAG_)
@@ -112,10 +112,10 @@ function [obj] = setDefaultProperties()
     obj.AUDIO_DEVICE_READY_FLAG = false;
 
     % Operation Flags ENUMERATION
-    obj.PROCESSING_ON = 1;% Main Processing state
-    obj.EXIT_FLAG_ = 0;% Interupt flag to exit the main loop
-    obj.SKIP_FRAME_FLAG_ = 2;% Flag to skip frame
-    obj.NO_TRANSMISSION_FLAG_ = -1;% Flag to indicate no no transmission
+    obj.PROCESSING_ON_STATE_ = 1;% Main Processing state
+    obj.EXIT_STATE_ = 0;% Interupt state to exit the main loop
+    obj.SKIP_FRAME_STATE_ = 2;% Sate to skip frame
+    obj.NO_TRANSMISSION_STATE_ = -1;% State to indicate no transmission
 
     % Debug and interface
     obj.PacketsPerUIrefresh = 100;

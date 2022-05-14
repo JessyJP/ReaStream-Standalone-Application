@@ -6,7 +6,7 @@ function [audioFrame,STATE_FLAG_,totalBytesRead] = readReaStreameFrame(obj)
     totalBytesRead = 0;
     
     % Default output state
-    STATE_FLAG_ = double(obj.PROCESSING_ON);
+    STATE_FLAG_ = double(obj.PROCESSING_ON_STATE_);
       
     % Locate 'MRSR'
     timer = tic();
@@ -34,7 +34,7 @@ function [audioFrame,STATE_FLAG_,totalBytesRead] = readReaStreameFrame(obj)
         % control to the main loop and check for interupts before checking
         % the buffer again
         if toc(timer) > obj.TimeOut
-            STATE_FLAG_ = obj.NO_TRANSMISSION_FLAG_;
+            STATE_FLAG_ = obj.NO_TRANSMISSION_STATE_;
             audioFrame = rsFrameHeader2Struct(uint8(zeros(1,43)));% Get Empty frame   
             return;
         end  
@@ -55,7 +55,7 @@ function [audioFrame,STATE_FLAG_,totalBytesRead] = readReaStreameFrame(obj)
         % Discard this packet payload
         readUDPbuffer(obj,audioFrame.audioByteLength/obj.ByteDepth,'single');
         totalBytesRead = totalBytesRead + audioFrame.audioByteLength;% Add the numder of bytes read
-        STATE_FLAG_ = obj.SKIP_FRAME_FLAG_;
+        STATE_FLAG_ = obj.SKIP_FRAME_STATE_;
         return;
     end
     

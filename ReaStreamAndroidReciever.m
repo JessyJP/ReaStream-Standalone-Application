@@ -30,9 +30,9 @@ classdef ReaStreamAndroidReciever  < handle
             AUDIO_DEVICE_READY_FLAG = false;
 
             % Operation Flags ENUMERATION
-            PROCESSING_ON = 1;% Main Processing state
-            EXIT_FLAG_ = 0;% Interupt flag to exit the main loop
-            SKIP_FRAME_FLAG_ = 2;% Flag to skip frame
+            PROCESSING_ON_STATE_ = 1;% Main Processing state
+            EXIT_STATE_ = 0;% Interupt flag to exit the main loop
+            SKIP_FRAME_STATE_ = 2;% Flag to skip frame
             NO_TRANSMISSION_FLAG_ = -1;% Flag to indicate no no transmission
             
             % It is used for UI debuging
@@ -126,7 +126,7 @@ classdef ReaStreamAndroidReciever  < handle
             obj.AUDIO_DEVICE_READY_FLAG = false;
             % Check and listen for Frames
             [testFrame,STATE_FLAG_NEEDED] = readReaStreameFrame(obj);
-            while (STATE_FLAG_NEEDED ~= obj.PROCESSING_ON)
+            while (STATE_FLAG_NEEDED ~= obj.PROCESSING_ON_STATE_)
                 [testFrame,STATE_FLAG_NEEDED] = readReaStreameFrame(obj);
                 drawnow;
                 if not(STATE_IN_LOOP_FLAG_)

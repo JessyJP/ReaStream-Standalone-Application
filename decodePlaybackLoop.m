@@ -6,7 +6,7 @@ function [obj] = decodePlaybackLoop(obj)
     global STATE_IN_LOOP_FLAG_;% Global interupt flag
     global FLUSH_UDP_BUFFER_FLAG_; 
     FLUSH_UDP_BUFFER_FLAG_ = false;
-    STATE_FLAG_ = obj.PROCESSING_ON;
+    STATE_FLAG_ = obj.PROCESSING_ON_STATE_;
 
     % Playback Settings
     coder.varsize('playbackBuffer');
@@ -17,7 +17,7 @@ function [obj] = decodePlaybackLoop(obj)
     % Frame count
     f=1;
     % Loop
-    while STATE_IN_LOOP_FLAG_ && not(STATE_FLAG_ == obj.EXIT_FLAG_)% External and Internal interupt flags
+    while STATE_IN_LOOP_FLAG_ && not(STATE_FLAG_ == obj.EXIT_STATE_)% External and Internal interupt flags
 
         % Read reastream frame
         [Frame,STATE_FLAG_] = readReaStreameFrame(obj);
@@ -32,7 +32,7 @@ function [obj] = decodePlaybackLoop(obj)
         end 
         
         % Control logic Check flags
-        if (STATE_FLAG_ == obj.SKIP_FRAME_FLAG_) || (STATE_FLAG_ == obj.NO_TRANSMISSION_FLAG_)
+        if (STATE_FLAG_ == obj.SKIP_FRAME_STATE_) || (STATE_FLAG_ == obj.NO_TRANSMISSION_STATE_)
             continue;
         end    
         if FLUSH_UDP_BUFFER_FLAG_
@@ -42,7 +42,7 @@ function [obj] = decodePlaybackLoop(obj)
 
         % External interupt switch!
         if not(STATE_IN_LOOP_FLAG_) 
-            if (STATE_FLAG_ == obj.NO_TRANSMISSION_FLAG_)
+            if (STATE_FLAG_ == obj.NO_TRANSMISSION_STATE_)
                 disp(' --- Disconnect due to empty transmission! --- ');
             end
             break;
