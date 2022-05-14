@@ -11,6 +11,17 @@ function [audioFrame,STATE_FLAG_,totalBytesRead] = readReaStreameFrame(obj)
     % Locate 'MRSR'
     timer = tic();
     while true
+        % TODO NOTE: technically the there might be some random bites in
+        % between. The reading of the buffer assumes the frames are one
+        % after the other and even if they are not it should be able to
+        % recover the correct position as long as 1,2 or 3 bytes don't
+        % offset the tag, as we are reading 4 bites at the time. One way to
+        % compensate for this possible issue is to keep the last tag buffer 
+        % and therefore search for the 4 byte tag in an 8 tag buffer and if
+        % the tag is located we can reset the possibiton. 
+        % However, this problem has never occured therefore there was no
+        % need for such tag position reset.
+        
         tag = readUDPbuffer(obj,obj.startTgLen,'uint8');
         totalBytesRead = totalBytesRead + obj.startTgLen;% Add the numder of bytes read
         % If a frame is located
