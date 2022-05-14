@@ -33,7 +33,7 @@ classdef ReaStreamAndroidReciever  < handle
             PROCESSING_ON_STATE_ = 1;% Main Processing state
             EXIT_STATE_ = 0;% Interupt flag to exit the main loop
             SKIP_FRAME_STATE_ = 2;% Flag to skip frame
-            NO_TRANSMISSION_FLAG_ = -1;% Flag to indicate no no transmission
+            NO_TRANSMISSION_STATE_ = -1;% Flag to indicate no no transmission
             
             % It is used for UI debuging
             PacketsPerUIrefresh = 100;            
