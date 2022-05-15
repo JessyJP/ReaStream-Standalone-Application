@@ -106,6 +106,12 @@ function [obj] = setDefaultProperties()
     % Buffer size
     obj.pbSampSize = 128;% Default
     obj.VariableBufferON = true;% Default
+    % Buffer for debuging and testing
+    obj.DEBUG_BUFFER_REALTIME_FLAG  = true
+    obj.DEBUG_BUFFER_RECORD_FLAG    = flase;
+    obj.DEBUG_BUFFER_PLAYBACK_FLAG  = flase;            
+    obj.DEBUG_STORE_FRAME_FLAG      = false;
+    obj.FrameBuffer = [];
 
     % Device Writer Handle
     obj.deviceWriter = audioDeviceWriter('SampleRate',48000,'SupportVariableSizeInput',true);

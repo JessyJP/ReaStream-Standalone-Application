@@ -2,12 +2,9 @@ function [output] = readUDPbuffer(obj,byteSize,type)
 % function [output] = readUDPbuffer(obj,byteSize,type)
     % Global Declaration FOR RECORD AND PLAYBACK
     global output_ i STATE_IN_LOOP_FLAG_;    
-    REAL_TIME_ = coder.target('MATLAB');
-    RECORD_ = 0;
-    PLAYBACK_ = not(coder.target('MATLAB'));
 
     %% The actual code needed
-    if  REAL_TIME_
+    if  obj.DEBUG_BUFFER_REALTIME_FLAG
         
         [output] = obj.udp.read(byteSize,type);
 %     [output] = read(obj.udp,byteSize,type); 
@@ -17,7 +14,7 @@ function [output] = readUDPbuffer(obj,byteSize,type)
     %% For testing
     % FOR TESTING for recording data
 
-    if RECORD_ 
+    if obj.DEBUG_BUFFER_RECORD_FLAG 
         switch (type) 
             case 'uint8'
                 outputRec = typecast(uint8(output),'uint8');
@@ -35,7 +32,7 @@ function [output] = readUDPbuffer(obj,byteSize,type)
     end
     
     % For reading back data 
-    if PLAYBACK_
+    if obj.DEBUG_BUFFER_PLAYBACK_FLAG
         
         if isempty(output_)
             i = 0;
@@ -43,7 +40,7 @@ function [output] = readUDPbuffer(obj,byteSize,type)
             data = load(filename,'output_');
             output_ = data.output_;
         end
-        if i+byteSize > 0.2*numel(output_)
+        if i+byteSize > numel(output_)
             i =0;
             
             STATE_IN_LOOP_FLAG_ = false;

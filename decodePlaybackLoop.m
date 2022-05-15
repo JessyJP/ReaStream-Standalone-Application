@@ -22,6 +22,12 @@ function [obj] = decodePlaybackLoop(obj)
         % Read reastream frame
         [Frame,STATE_FLAG_] = readReaStreameFrame(obj);
 
+
+        if obj.DEBUG_STORE_BUFFER_FLAG
+            % Single frame or cumulative
+            obj.FrameBuffer = Frame;
+        end
+
         % This will force update the UI but not unless there is normal
         % transmission frames
         
