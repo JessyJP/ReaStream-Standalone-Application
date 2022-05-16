@@ -28,7 +28,7 @@ void readReaStreameFrame(
     real_T *audioFrame_udpPayLoadBytes, char_T audioFrame_streamName_data[],
     int32_T audioFrame_streamName_size[2], real_T *audioFrame_numChannels,
     real_T *audioFrame_SampleRate, real_T *audioFrame_audioByteLength,
-    real_T *audioFrame_bufferSize, real_T *audioFrame_timeLenght,
+    real_T *audioFrame_bufferSize, real_T *audioFrame_timeLength_ms,
     emxArray_real32_T *audioFrame_audioFrameBuff, real_T *STATE_FLAG_);
 
 /* End of code generation (readReaStreameFrame.h) */

@@ -269,7 +269,7 @@ void readReaStreameFrame(
     real_T *audioFrame_udpPayLoadBytes, char_T audioFrame_streamName_data[],
     int32_T audioFrame_streamName_size[2], real_T *audioFrame_numChannels,
     real_T *audioFrame_SampleRate, real_T *audioFrame_audioByteLength,
-    real_T *audioFrame_bufferSize, real_T *audioFrame_timeLenght,
+    real_T *audioFrame_bufferSize, real_T *audioFrame_timeLength_ms,
     emxArray_real32_T *audioFrame_audioFrameBuff, real_T *STATE_FLAG_)
 {
   static const char_T b_b[4] = {'M', 'R', 'S', 'R'};
@@ -519,7 +519,7 @@ void readReaStreameFrame(
       S_bufferSize = (real_T)d_y / ((real_T)S_numChannels_tmp_tmp * 4.0);
       /*  Audio Buffer to be read */
       b_i = d_y;
-      *audioFrame_timeLenght = 1000.0 * S_bufferSize / (real_T)c_y;
+      *audioFrame_timeLength_ms = 1000.0 * S_bufferSize / (real_T)c_y;
       audioFrame_audioFrameBuff->size[0] = 0;
       audioFrame_audioFrameBuff->size[1] = 0;
       /*  Convert the byte stream to a structure */
@@ -763,7 +763,7 @@ void readReaStreameFrame(
         audioFrame_streamName_size[1] = 0;
         S_numChannels_tmp_tmp = 0;
         b_i = d_y;
-        *audioFrame_timeLenght = 1000.0 * S_bufferSize / (real_T)c_y;
+        *audioFrame_timeLength_ms = 1000.0 * S_bufferSize / (real_T)c_y;
         audioFrame_audioFrameBuff->size[0] = 0;
         audioFrame_audioFrameBuff->size[1] = 0;
         /*  Get Empty frame    */

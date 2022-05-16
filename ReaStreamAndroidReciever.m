@@ -26,8 +26,8 @@ classdef ReaStreamAndroidReciever  < handle
             VariableBufferON = true;% Default
             % Buffer for debuging and testing
             DEBUG_BUFFER_REALTIME_FLAG  = true
-            DEBUG_BUFFER_RECORD_FLAG    = flase;
-            DEBUG_BUFFER_PLAYBACK_FLAG  = flase;            
+            DEBUG_BUFFER_RECORD_FLAG    = false;
+            DEBUG_BUFFER_PLAYBACK_FLAG  = false;            
             DEBUG_STORE_FRAME_FLAG      = false;
             FrameBuffer = [];
 

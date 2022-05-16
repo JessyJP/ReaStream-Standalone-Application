@@ -108,8 +108,8 @@ function [obj] = setDefaultProperties()
     obj.VariableBufferON = true;% Default
     % Buffer for debuging and testing
     obj.DEBUG_BUFFER_REALTIME_FLAG  = true
-    obj.DEBUG_BUFFER_RECORD_FLAG    = flase;
-    obj.DEBUG_BUFFER_PLAYBACK_FLAG  = flase;            
+    obj.DEBUG_BUFFER_RECORD_FLAG    = false;
+    obj.DEBUG_BUFFER_PLAYBACK_FLAG  = false;            
     obj.DEBUG_STORE_FRAME_FLAG      = false;
     obj.FrameBuffer = [];
 

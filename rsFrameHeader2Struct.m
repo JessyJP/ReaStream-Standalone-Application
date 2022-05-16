@@ -1,5 +1,5 @@
 function [S] = rsFrameHeader2Struct(F)
-% function [S,i] = rsFrameHeader2Struct(F)
+% function [S] = rsFrameHeader2Struct(F)
 % Unpack ReaStream Frame Header to a Structure
 % The input is expected as uint8 byte stream
 %
@@ -22,7 +22,7 @@ function [S] = rsFrameHeader2Struct(F)
     S.SampleRate = 0;
     S.audioByteLength = 0;
     S.bufferSize = 0;
-    S.timeLenght = 0;
+    S.timeLength_ms = 0;
     coder.varsize('S.audioFrameBuff');
     S.audioFrameBuff = single([]);
     
@@ -63,7 +63,7 @@ function [S] = rsFrameHeader2Struct(F)
 
     % Compute buffer
     S.bufferSize = S.audioByteLength/(S.numChannels*4);
-    S.timeLenght = 1000*S.bufferSize/S.SampleRate;
+    S.timeLength_ms = 1000*S.bufferSize/S.SampleRate;
     
     % Audio Buffer to be read
     S.audioFrameBuff = single([]);
@@ -95,7 +95,7 @@ end
 % 
 %     % Compute buffer
 %     bufferSize = audioByteLength/(numChannels*4);
-%     timeLenght = 1000*bufferSize/SampleRate;
+%     timeLength_ms = 1000*bufferSize/SampleRate;
 %     
 %     % Audio Buffer to be read
 %     audioFrameBuff = single(0);
@@ -108,5 +108,5 @@ end
 %     S.SampleRate = SampleRate;
 %     S.audioByteLength = audioByteLength;
 %     S.bufferSize = bufferSize;
-%     S.timeLenght = timeLenght;
+%     S.timeLength_ms = timeLength_ms;
 %     S.audioFrameBuff = audioFrameBuff;

@@ -28,7 +28,7 @@ void readReaStreameFrame(
     char audioFrame_streamName_data[], int audioFrame_streamName_size[2],
     double *audioFrame_numChannels, double *audioFrame_SampleRate,
     double *audioFrame_audioByteLength, double *audioFrame_bufferSize,
-    double *audioFrame_timeLenght, emxArray_real32_T *audioFrame_audioFrameBuff,
+    double *audioFrame_timeLength_ms, emxArray_real32_T *audioFrame_audioFrameBuff,
     double *STATE_FLAG_);
 
 #ifdef __cplusplus

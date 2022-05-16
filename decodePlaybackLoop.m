@@ -23,7 +23,7 @@ function [obj] = decodePlaybackLoop(obj)
         [Frame,STATE_FLAG_] = readReaStreameFrame(obj);
 
 
-        if obj.DEBUG_STORE_BUFFER_FLAG
+        if obj.DEBUG_STORE_FRAME_FLAG
             % Single frame or cumulative
             obj.FrameBuffer = Frame;
         end

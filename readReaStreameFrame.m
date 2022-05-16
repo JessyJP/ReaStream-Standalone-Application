@@ -1,5 +1,5 @@
 function [audioFrame,STATE_FLAG_,totalBytesRead] = readReaStreameFrame(obj)
-% function [audioFrame,STATE_FLAG_] = readReaStreameFrame(obj)
+% function [audioFrame,STATE_FLAG_,totalBytesRead] = readReaStreameFrame(obj)
     
     % Default output
 %     audioFrame = [];% Get Empty frame  
