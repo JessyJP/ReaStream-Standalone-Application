@@ -1,87 +1,37 @@
-<deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
-  <configuration file="C:\Users\JessyJP\Dropbox\Projects Workfiles &amp; Software\ReaStream-Standalone-Application\ReaStreamReceiverApp.prj" location="C:\Users\JessyJP\Dropbox\Projects Workfiles &amp; Software\ReaStream-Standalone-Application" name="ReaStreamReceiverApp" target="target.ezdeploy.standalone" target-name="Application Compiler">
-    <param.appname>ReaStreamReceiverStandalone</param.appname>
-    <param.icon />
-    <param.icons />
-    <param.version>1.0</param.version>
+<deployment-project plugin="plugin.apptool" plugin-version="1.0">
+  <configuration build-checksum="2084540342" file="C:\Users\JessyJP\Dropbox\Projects Workfiles &amp; Software\ReaStream-Standalone-Application\ReaStreamReceiverApp.prj" location="C:\Users\JessyJP\Dropbox\Projects Workfiles &amp; Software\ReaStream-Standalone-Application" name="ReaStreamReceiverApp" target="target.mlapps" target-name="Package App">
+    <param.appname>ReaStreamReceiverApp</param.appname>
     <param.authnamewatermark>JessyJP</param.authnamewatermark>
     <param.email />
     <param.company />
-    <param.summary />
+    <param.icon />
+    <param.icons />
+    <param.summary>Matlab Packageed app</param.summary>
     <param.description />
-    <param.screenshot>${PROJECT_ROOT}\Images\audio-codec.jpg</param.screenshot>
-    <param.guid />
-    <param.installpath.string>\ReaStreamReceiverStandalone\</param.installpath.string>
-    <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
-    <param.logo />
-    <param.install.notes />
-    <param.target.install.notes />
-    <param.intermediate>${PROJECT_ROOT}\ReaStreamReceiverApp\for_testing</param.intermediate>
-    <param.files.only>${PROJECT_ROOT}\ReaStreamReceiverApp\for_redistribution_files_only</param.files.only>
-    <param.output>${PROJECT_ROOT}\ReaStreamReceiverApp\for_redistribution</param.output>
-    <param.logdir>${PROJECT_ROOT}\ReaStreamReceiverApp</param.logdir>
-    <param.enable.clean.build>false</param.enable.clean.build>
-    <param.user.defined.mcr.options />
-    <param.target.type>subtarget.standalone</param.target.type>
-    <param.support.packages />
-    <param.web.mcr>true</param.web.mcr>
-    <param.package.mcr>false</param.package.mcr>
-    <param.no.mcr>false</param.no.mcr>
-    <param.web.mcr.name>MyAppInstaller_web</param.web.mcr.name>
-    <param.package.mcr.name>MyAppInstaller_mcr</param.package.mcr.name>
-    <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
-    <param.windows.command.prompt>true</param.windows.command.prompt>
-    <param.create.log>false</param.create.log>
-    <param.log.file />
-    <param.native.matlab>false</param.native.matlab>
-    <param.checkbox>false</param.checkbox>
-    <param.example />
-    <param.help.text>Syntax 
-	  -? 
-	 
- Input Arguments 
-	 -?  print help on how to use the application 
-	 input arguments</param.help.text>
+    <param.screenshot>C:\Users\JessyJP\AppData\Local\Temp\tp9d943750_f36b_4f90_b6d6_e76007b6ce0f.png</param.screenshot>
+    <param.version>1.0</param.version>
+    <param.products.name />
+    <param.products.id />
+    <param.products.version />
+    <param.platforms />
+    <param.output>${PROJECT_ROOT}</param.output>
+    <param.guid>6ad92767-a098-424d-9b36-6107f351f333</param.guid>
     <unset>
-      <param.icon />
-      <param.icons />
-      <param.version />
       <param.email />
       <param.company />
-      <param.summary />
+      <param.icon />
+      <param.icons />
       <param.description />
-      <param.guid />
-      <param.installpath.string />
-      <param.installpath.combo />
-      <param.logo />
-      <param.install.notes />
-      <param.target.install.notes />
-      <param.intermediate />
-      <param.files.only />
+      <param.version />
+      <param.products.name />
+      <param.products.id />
+      <param.products.version />
+      <param.platforms />
       <param.output />
-      <param.logdir />
-      <param.enable.clean.build />
-      <param.user.defined.mcr.options />
-      <param.target.type />
-      <param.support.packages />
-      <param.web.mcr />
-      <param.package.mcr />
-      <param.no.mcr />
-      <param.web.mcr.name />
-      <param.package.mcr.name />
-      <param.no.mcr.name />
-      <param.windows.command.prompt />
-      <param.create.log />
-      <param.log.file />
-      <param.native.matlab />
-      <param.checkbox />
-      <param.example />
     </unset>
     <fileset.main>
       <file>${PROJECT_ROOT}\ReaStreamReceiverApp.mlapp</file>
     </fileset.main>
-    <fileset.resources />
-    <fileset.package />
     <fileset.depfun>
       <file>${PROJECT_ROOT}\decodePlaybackLoop.m</file>
       <file>${PROJECT_ROOT}\flushUDPbuffer.m</file>
@@ -91,12 +41,11 @@
       <file>${PROJECT_ROOT}\readUDPbuffer.m</file>
       <file>${PROJECT_ROOT}\ReaStreamReceiver.m</file>
       <file>${PROJECT_ROOT}\rsFrameHeader2Struct.m</file>
-      <file>${PROJECT_ROOT}\UDPdataForTesting.mat</file>
     </fileset.depfun>
+    <fileset.resources />
+    <fileset.package />
     <build-deliverables>
-      <file location="${PROJECT_ROOT}\ReaStreamReceiverApp\for_testing" name="readme.txt" optional="true">C:\Users\JessyJP\Dropbox\Projects Workfiles &amp; Software\ReaStream-Standalone-Application\ReaStreamReceiverApp\for_testing\readme.txt</file>
-      <file location="${PROJECT_ROOT}\ReaStreamReceiverApp\for_testing" name="ReaStreamReceiverStandalone.exe" optional="false">C:\Users\JessyJP\Dropbox\Projects Workfiles &amp; Software\ReaStream-Standalone-Application\ReaStreamReceiverApp\for_testing\ReaStreamReceiverStandalone.exe</file>
-      <file location="${PROJECT_ROOT}\ReaStreamReceiverApp\for_testing" name="splash.png" optional="false">C:\Users\JessyJP\Dropbox\Projects Workfiles &amp; Software\ReaStream-Standalone-Application\ReaStreamReceiverApp\for_testing\splash.png</file>
+      <file location="C:\Users\JessyJP\Dropbox\Projects Workfiles &amp; Software" name="ReaStream-Standalone-Application" optional="false">C:\Users\JessyJP\Dropbox\Projects Workfiles &amp; Software\ReaStream-Standalone-Application</file>
     </build-deliverables>
     <workflow />
     <matlab>
