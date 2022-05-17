@@ -30,6 +30,7 @@ classdef ReaStreamReceiver  < handle
             DEBUG_BUFFER_RECORD_FLAG    = false;
             DEBUG_BUFFER_PLAYBACK_FLAG  = false;            
             DEBUG_STORE_FRAME_FLAG      = false;
+            DEBUG_SCOPE_SHOW_FLAG       = false;  
             FrameBuffer = [];
 
             % Device Writer Handle

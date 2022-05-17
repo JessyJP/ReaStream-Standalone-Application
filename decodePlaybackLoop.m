@@ -65,8 +65,8 @@ function [obj] = decodePlaybackLoop(obj)
         end
 
         %  IGNORE+++START
-        if coder.target('MATLAB')  
-%             updateScopeInLoopScript;
+        if coder.target('MATLAB') || obj.DEBUG_SCOPE_SHOW_FLAG
+            updateScopeInLoopScript;
         end
         %  IGNORE+++END
 
