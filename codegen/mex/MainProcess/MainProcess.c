@@ -31,126 +31,126 @@ static emlrtRSInfo emlrtRSI = {
     9,             /* lineNo */
     "MainProcess", /* fcnName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\MainProcess.m" /* pathName */
+    "Standalone Receiver\\MainProcess.m" /* pathName */
 };
 
 static emlrtRSInfo b_emlrtRSI = {
     82,            /* lineNo */
     "MainProcess", /* fcnName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\MainProcess.m" /* pathName */
+    "Standalone Receiver\\MainProcess.m" /* pathName */
 };
 
 static emlrtRSInfo c_emlrtRSI = {
     79,            /* lineNo */
     "MainProcess", /* fcnName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\MainProcess.m" /* pathName */
+    "Standalone Receiver\\MainProcess.m" /* pathName */
 };
 
 static emlrtRSInfo d_emlrtRSI = {
     74,            /* lineNo */
     "MainProcess", /* fcnName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\MainProcess.m" /* pathName */
+    "Standalone Receiver\\MainProcess.m" /* pathName */
 };
 
 static emlrtRSInfo e_emlrtRSI = {
     66,            /* lineNo */
     "MainProcess", /* fcnName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\MainProcess.m" /* pathName */
+    "Standalone Receiver\\MainProcess.m" /* pathName */
 };
 
 static emlrtRSInfo f_emlrtRSI = {
     51,            /* lineNo */
     "MainProcess", /* fcnName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\MainProcess.m" /* pathName */
+    "Standalone Receiver\\MainProcess.m" /* pathName */
 };
 
 static emlrtRSInfo g_emlrtRSI = {
     44,            /* lineNo */
     "MainProcess", /* fcnName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\MainProcess.m" /* pathName */
+    "Standalone Receiver\\MainProcess.m" /* pathName */
 };
 
 static emlrtRSInfo h_emlrtRSI = {
     41,            /* lineNo */
     "MainProcess", /* fcnName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\MainProcess.m" /* pathName */
+    "Standalone Receiver\\MainProcess.m" /* pathName */
 };
 
 static emlrtRSInfo i_emlrtRSI = {
     39,            /* lineNo */
     "MainProcess", /* fcnName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\MainProcess.m" /* pathName */
+    "Standalone Receiver\\MainProcess.m" /* pathName */
 };
 
 static emlrtRSInfo j_emlrtRSI = {
     35,            /* lineNo */
     "MainProcess", /* fcnName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\MainProcess.m" /* pathName */
+    "Standalone Receiver\\MainProcess.m" /* pathName */
 };
 
 static emlrtRSInfo k_emlrtRSI = {
     111,                    /* lineNo */
     "setDefaultProperties", /* fcnName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\MainProcess.m" /* pathName */
+    "Standalone Receiver\\MainProcess.m" /* pathName */
 };
 
 static emlrtRSInfo gc_emlrtRSI = {
     71,                   /* lineNo */
     "decodePlaybackLoop", /* fcnName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\decodePlaybackLoop.m" /* pathName */
+    "Standalone Receiver\\decodePlaybackLoop.m" /* pathName */
 };
 
 static emlrtRSInfo hc_emlrtRSI = {
     70,                   /* lineNo */
     "decodePlaybackLoop", /* fcnName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\decodePlaybackLoop.m" /* pathName */
+    "Standalone Receiver\\decodePlaybackLoop.m" /* pathName */
 };
 
 static emlrtRSInfo ic_emlrtRSI = {
     67,                   /* lineNo */
     "decodePlaybackLoop", /* fcnName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\decodePlaybackLoop.m" /* pathName */
+    "Standalone Receiver\\decodePlaybackLoop.m" /* pathName */
 };
 
 static emlrtRSInfo jc_emlrtRSI = {
     59,                   /* lineNo */
     "decodePlaybackLoop", /* fcnName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\decodePlaybackLoop.m" /* pathName */
+    "Standalone Receiver\\decodePlaybackLoop.m" /* pathName */
 };
 
 static emlrtRSInfo kc_emlrtRSI = {
     39,                   /* lineNo */
     "decodePlaybackLoop", /* fcnName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\decodePlaybackLoop.m" /* pathName */
+    "Standalone Receiver\\decodePlaybackLoop.m" /* pathName */
 };
 
 static emlrtRSInfo lc_emlrtRSI = {
     23,                   /* lineNo */
     "decodePlaybackLoop", /* fcnName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\decodePlaybackLoop.m" /* pathName */
+    "Standalone Receiver\\decodePlaybackLoop.m" /* pathName */
 };
 
 static emlrtRSInfo mc_emlrtRSI = {
     16,                   /* lineNo */
     "decodePlaybackLoop", /* fcnName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\decodePlaybackLoop.m" /* pathName */
+    "Standalone Receiver\\decodePlaybackLoop.m" /* pathName */
 };
 
 static emlrtRSInfo nc_emlrtRSI = {
@@ -182,7 +182,7 @@ static emlrtMCInfo emlrtMCI = {
     5,             /* colNo */
     "MainProcess", /* fName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\MainProcess.m" /* pName */
+    "Standalone Receiver\\MainProcess.m" /* pName */
 };
 
 static emlrtMCInfo b_emlrtMCI = {
@@ -190,7 +190,7 @@ static emlrtMCInfo b_emlrtMCI = {
     9,             /* colNo */
     "MainProcess", /* fName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\MainProcess.m" /* pName */
+    "Standalone Receiver\\MainProcess.m" /* pName */
 };
 
 static emlrtMCInfo c_emlrtMCI = {
@@ -198,7 +198,7 @@ static emlrtMCInfo c_emlrtMCI = {
     9,             /* colNo */
     "MainProcess", /* fName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\MainProcess.m" /* pName */
+    "Standalone Receiver\\MainProcess.m" /* pName */
 };
 
 static emlrtMCInfo d_emlrtMCI = {
@@ -206,7 +206,7 @@ static emlrtMCInfo d_emlrtMCI = {
     9,             /* colNo */
     "MainProcess", /* fName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\MainProcess.m" /* pName */
+    "Standalone Receiver\\MainProcess.m" /* pName */
 };
 
 static emlrtMCInfo e_emlrtMCI = {
@@ -214,23 +214,23 @@ static emlrtMCInfo e_emlrtMCI = {
     9,             /* colNo */
     "MainProcess", /* fName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\MainProcess.m" /* pName */
+    "Standalone Receiver\\MainProcess.m" /* pName */
 };
 
 static emlrtMCInfo f_emlrtMCI = {
     135,            /* lineNo */
     5,              /* colNo */
-    "connectToUDP", /* fName */
+    "connectReceiverUDP", /* fName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\MainProcess.m" /* pName */
+    "Standalone Receiver\\MainProcess.m" /* pName */
 };
 
 static emlrtMCInfo g_emlrtMCI = {
     143,             /* lineNo */
     5,               /* colNo */
-    "disconnectUDP", /* fName */
+    "disconnectReceiverUDP", /* fName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\MainProcess.m" /* pName */
+    "Standalone Receiver\\MainProcess.m" /* pName */
 };
 
 static emlrtMCInfo h_emlrtMCI = {
@@ -238,7 +238,7 @@ static emlrtMCInfo h_emlrtMCI = {
     9,                  /* colNo */
     "SetupAudioDevice", /* fName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\MainProcess.m" /* pName */
+    "Standalone Receiver\\MainProcess.m" /* pName */
 };
 
 static emlrtMCInfo i_emlrtMCI = {
@@ -246,7 +246,7 @@ static emlrtMCInfo i_emlrtMCI = {
     2,                /* colNo */
     "flushUDPbuffer", /* fName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\flushUDPbuffer.m" /* pName */
+    "Standalone Receiver\\flushUDPbuffer.m" /* pName */
 };
 
 static emlrtBCInfo emlrtBCI = {
@@ -257,7 +257,7 @@ static emlrtBCInfo emlrtBCI = {
     "playbackBuffer",     /* aName */
     "decodePlaybackLoop", /* fName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\decodePlaybackLoop.m", /* pName */
+    "Standalone Receiver\\decodePlaybackLoop.m", /* pName */
     0                                         /* checkKind */
 };
 
@@ -266,7 +266,7 @@ static emlrtDCInfo emlrtDCI = {
     51,                   /* colNo */
     "decodePlaybackLoop", /* fName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\decodePlaybackLoop.m", /* pName */
+    "Standalone Receiver\\decodePlaybackLoop.m", /* pName */
     1                                         /* checkKind */
 };
 
@@ -278,7 +278,7 @@ static emlrtBCInfo b_emlrtBCI = {
     "playbackBuffer",     /* aName */
     "decodePlaybackLoop", /* fName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\decodePlaybackLoop.m", /* pName */
+    "Standalone Receiver\\decodePlaybackLoop.m", /* pName */
     0                                         /* checkKind */
 };
 
@@ -305,7 +305,7 @@ static emlrtRTEInfo r_emlrtRTEI = {
     13,                   /* colNo */
     "decodePlaybackLoop", /* fName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\decodePlaybackLoop.m" /* pName */
+    "Standalone Receiver\\decodePlaybackLoop.m" /* pName */
 };
 
 static emlrtRTEInfo s_emlrtRTEI = {
@@ -313,7 +313,7 @@ static emlrtRTEInfo s_emlrtRTEI = {
     34,                   /* colNo */
     "decodePlaybackLoop", /* fName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\decodePlaybackLoop.m" /* pName */
+    "Standalone Receiver\\decodePlaybackLoop.m" /* pName */
 };
 
 static emlrtRTEInfo t_emlrtRTEI = {
@@ -321,7 +321,7 @@ static emlrtRTEInfo t_emlrtRTEI = {
     32,                   /* colNo */
     "decodePlaybackLoop", /* fName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\decodePlaybackLoop.m" /* pName */
+    "Standalone Receiver\\decodePlaybackLoop.m" /* pName */
 };
 
 static emlrtRTEInfo u_emlrtRTEI = {
@@ -329,7 +329,7 @@ static emlrtRTEInfo u_emlrtRTEI = {
     6,             /* colNo */
     "MainProcess", /* fName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\MainProcess.m" /* pName */
+    "Standalone Receiver\\MainProcess.m" /* pName */
 };
 
 static emlrtRTEInfo v_emlrtRTEI = {
@@ -337,70 +337,70 @@ static emlrtRTEInfo v_emlrtRTEI = {
     5,                    /* colNo */
     "decodePlaybackLoop", /* fName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\decodePlaybackLoop.m" /* pName */
+    "Standalone Receiver\\decodePlaybackLoop.m" /* pName */
 };
 
 static emlrtRSInfo fd_emlrtRSI = {
     143,             /* lineNo */
-    "disconnectUDP", /* fcnName */
+    "disconnectReceiverUDP", /* fcnName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\MainProcess.m" /* pathName */
+    "Standalone Receiver\\MainProcess.m" /* pathName */
 };
 
 static emlrtRSInfo gd_emlrtRSI = {
     78,            /* lineNo */
     "MainProcess", /* fcnName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\MainProcess.m" /* pathName */
+    "Standalone Receiver\\MainProcess.m" /* pathName */
 };
 
 static emlrtRSInfo hd_emlrtRSI = {
     69,            /* lineNo */
     "MainProcess", /* fcnName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\MainProcess.m" /* pathName */
+    "Standalone Receiver\\MainProcess.m" /* pathName */
 };
 
 static emlrtRSInfo id_emlrtRSI = {
     5,                /* lineNo */
     "flushUDPbuffer", /* fcnName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\flushUDPbuffer.m" /* pathName */
+    "Standalone Receiver\\flushUDPbuffer.m" /* pathName */
 };
 
 static emlrtRSInfo jd_emlrtRSI = {
     64,            /* lineNo */
     "MainProcess", /* fcnName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\MainProcess.m" /* pathName */
+    "Standalone Receiver\\MainProcess.m" /* pathName */
 };
 
 static emlrtRSInfo kd_emlrtRSI = {
     196,                /* lineNo */
     "SetupAudioDevice", /* fcnName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\MainProcess.m" /* pathName */
+    "Standalone Receiver\\MainProcess.m" /* pathName */
 };
 
 static emlrtRSInfo ld_emlrtRSI = {
     135,            /* lineNo */
-    "connectToUDP", /* fcnName */
+    "connectReceiverUDP", /* fcnName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\MainProcess.m" /* pathName */
+    "Standalone Receiver\\MainProcess.m" /* pathName */
 };
 
 static emlrtRSInfo md_emlrtRSI = {
     31,            /* lineNo */
     "MainProcess", /* fcnName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\MainProcess.m" /* pathName */
+    "Standalone Receiver\\MainProcess.m" /* pathName */
 };
 
 static emlrtRSInfo nd_emlrtRSI = {
     42,            /* lineNo */
     "MainProcess", /* fcnName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\MainProcess.m" /* pathName */
+    "Standalone Receiver\\MainProcess.m" /* pathName */
 };
 
 /* Function Declarations */
@@ -569,7 +569,7 @@ void MainProcess(const emlrtStack *sp, const char_T ReaStreamIDtag_data[],
   /*      disp(obj); */
   /*     %% Setup UPD connection    */
   st.site = &j_emlrtRSI;
-  /*  function [obj] = connectToUDP(obj) */
+  /*  function [obj] = connectReceiverUDP(obj) */
   /*  Setup UPD connection */
   b_y = NULL;
   m = emlrtCreateCharArray(2, &iv1[0]);

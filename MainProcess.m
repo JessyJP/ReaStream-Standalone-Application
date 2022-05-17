@@ -12,8 +12,8 @@ function MainProcess(ReaStreamIDtag,driverSelection,deviceSelection,pbSampSize,V
 %             global myApp;
 %             if not(isempty(myApp))
 %                 % Input from interface
-%                 obj.IP = myApp.IPEditField.Value;
-%                 obj.Port = myApp.PortEditField.Value;
+%                 obj.ReceiverIP = myApp.ReceiverIPEditField.Value;
+%                 obj.Port = myApp.ReceiverPortEditField.Value;
 %                 obj.ReaStreamIDtag = myApp.ReaStreamIdentifierDropDown.Value;
 %                 obj.driverSelection = myApp.AudioDriverDropDown.Value;
 %                 obj.deviceSelection = myApp.DeviceDropDown.Value;
@@ -32,7 +32,7 @@ function MainProcess(ReaStreamIDtag,driverSelection,deviceSelection,pbSampSize,V
 %     disp(obj);
 
     %% Setup UPD connection   
-    [obj] = connectToUDP(obj);
+    [obj] = connectReceiverUDP(obj);
 
     %% Setup the audio device with default settings
     % Check and listen for Frames
@@ -41,7 +41,7 @@ function MainProcess(ReaStreamIDtag,driverSelection,deviceSelection,pbSampSize,V
         [testFrame,STATE_FLAG_NEEDED] = readReaStreameFrame(obj);
         drawnow;
         if not(STATE_IN_LOOP_FLAG_)
-            [obj] = disconnectUDP(obj);
+            [obj] = disconnectReceiverUDP(obj);
             return;
         end
     end
@@ -55,7 +55,7 @@ function MainProcess(ReaStreamIDtag,driverSelection,deviceSelection,pbSampSize,V
         disp(' --- Audio device not found!!!! --- ');
         release(obj.deviceWriter);
         
-        [obj] = disconnectUDP(obj);
+        [obj] = disconnectReceiverUDP(obj);
         return;
     end
 
@@ -71,7 +71,7 @@ function MainProcess(ReaStreamIDtag,driverSelection,deviceSelection,pbSampSize,V
 
     %% Release UDP & audio device and hide debug settings
     % Clear the UDP connection
-    [obj] = disconnectUDP(obj);
+    [obj] = disconnectReceiverUDP(obj);
 
     % Release the audio device
     if obj.AUDIO_DEVICE_READY_FLAG
@@ -84,11 +84,11 @@ end
 function [obj] = setDefaultProperties()
     % Settings and Properties              
     % Connection Properties
-    obj.IP = '0.0.0.0';% Default
+    obj.ReceiverIP = '0.0.0.0';% Default
     obj.Port = 58710;% Default
     obj.TimeOut = 1;
     % UDP handle
-    obj.udp = [];
+    obj.ReceiverUDP = [];
     obj.UDP_CONNECTION_READY_FLAG = false;
 
     % Reastream ID tag
@@ -127,24 +127,24 @@ function [obj] = setDefaultProperties()
     obj.PacketsPerUIrefresh = 100;
 end
 
-function [obj] = connectToUDP(obj)
-% function [obj] = connectToUDP(obj)
+function [obj] = connectReceiverUDP(obj)
+% function [obj] = connectReceiverUDP(obj)
     % Setup UPD connection
     if coder.target('MATLAB')  
-        obj.udp = udpport(...
-            "LocalHost",obj.IP,...
+        obj.ReceiverUDP = udpport(...
+            "LocalHost",obj.ReceiverIP,...
             "LocalPort",obj.Port,...
             "EnablePortSharing",true,"Timeout",obj.TimeOut);
-        disp(obj.udp);     
+        disp(obj.ReceiverUDP);     
     end
     obj.UDP_CONNECTION_READY_FLAG = true;
     disp(' +++ UDP port opened and listening! +++ ');
 end
 
-function [obj] = disconnectUDP(obj)
+function [obj] = disconnectReceiverUDP(obj)
     % Clear the UDP object
     if coder.target('MATLAB')
-        obj.udp.delete();
+        obj.ReceiverUDP.delete();
     end
     disp(' --- Stop listening port! --- ');
     obj.UDP_CONNECTION_READY_FLAG = false;

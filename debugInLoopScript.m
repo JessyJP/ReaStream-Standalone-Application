@@ -26,11 +26,11 @@ DEBUG_ON_LAST_STATE_FLAG_ = myApp.DebugONCheckBox.Value;
 
 if myApp.DebugONCheckBox.Value
         %% Debug Settings
-        % obj.udp Diagnostics
+        % obj.ReceiverUDP Diagnostics
         
         % Statistics for debugin
         myApp.MeanNumBytesAvailableTextArea.Value=num2str(round(mean(myApp.UPD_bufferSizes)));
-        myApp.UPD_bufferSizes = [myApp.UPD_bufferSizes(2:end);obj.udp.NumBytesAvailable];
+        myApp.UPD_bufferSizes = [myApp.UPD_bufferSizes(2:end);obj.ReceiverUDP.NumBytesAvailable];
         
         
         if myApp.ScopeCheckBox.Value && ...

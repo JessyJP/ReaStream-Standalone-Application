@@ -23,8 +23,8 @@ clear all;
     
     
     % Input or input from interface
-    myApp.IPEditField.Value = '0.0.0.0';% Defaul;
-    myApp.PortEditField.Value  = 58710;% Default;
+    myApp.ReceiverIPEditField.Value = '0.0.0.0';% Defaul;
+    myApp.ReceiverPortEditField.Value  = 58710;% Default;
     myApp.ReaStreamIdentifierDropDown.Value = 'ReaperMainOut';% Default
     myApp.AudioDriverDropDown.Value = 'DirectSound';% Default
     myApp.DeviceDropDown.Value = 'Default';% Default
@@ -37,7 +37,7 @@ clear all;
     % Run the main process function
     MainProcess('ReaperMainOut','DirectSound','Default',128,true)   
 
-%     obj = ReaStreamAndroidReciever(myApp);
+%     obj = ReaStreamReceiver(myApp);
 %     obj.runMainProcess();
 return;
 
@@ -60,8 +60,8 @@ addpath('unitTestInputData\');
 
 % readReaStreameFrame -- UNIT TEST
 load('readReaStreameFrame.mat');
-obj.udp = udpport(...
-    "LocalHost",obj.IP,...
+obj.ReceiverUDP = udpport(...
+    "LocalHost",obj.ReceiverIP,...
     "LocalPort",obj.Port,...
     "EnablePortSharing",true,"Timeout",obj.TimeOut);
 

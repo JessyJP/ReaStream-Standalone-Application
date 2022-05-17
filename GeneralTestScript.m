@@ -1,12 +1,6 @@
 close all;clc;clear all;
 %% Add paths
-
-testPath = 'C:\Users\JessyJP\Dropbox\Projects Workfiles & Software\ReaStream-Standalone-Reciever';
-addpath(".")
-cd(testPath)
 addpath(genpath("."))
-testFile = "c:\Users\JessyJP\Dropbox\Projects Workfiles & Software\ReaStreamReceiverAndroidApp\testScript.m" ;
-
 
 %% Make test file
 
@@ -23,10 +17,10 @@ save(outputfile,"output_");
 
 %% Run 
 
-obj = ReaStreamAndroidReciever();
+obj = ReaStreamReceiver();
 obj.ReaStreamIDtag = 'Reastream Identifier Label';
 obj.DEBUG_BUFFER_REALTIME_FLAG  = false;
-% obj.DEBUG_BUFFER_RECORD_FLAG    = false;
+obj.DEBUG_BUFFER_RECORD_FLAG    = false;
 obj.DEBUG_BUFFER_PLAYBACK_FLAG  = true;
 obj.DEBUG_STORE_FRAME_FLAG = true;
 obj.runMainProcess()
@@ -54,7 +48,7 @@ S = makeFrame( ...
 B = rsFrame2UDPbyteArray(S);
 
 % Check the conversion
-ind = numel(output_);
+ind = numel(B);
 clear TBL;
     TBL.Index = (1:ind)';
     TBL.Original = output_(1:ind)';
@@ -80,3 +74,11 @@ output_ = rsFrame2UDPbyteArray(S);
 output_ = repmat(output_,1,1);
 save(outputfile,"output_");
 
+%% Transmit Test
+TransmitterIP= "localhost"
+
+
+%% Local Test functions
+
+
+ 

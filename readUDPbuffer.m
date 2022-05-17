@@ -6,8 +6,8 @@ function [output] = readUDPbuffer(obj,byteSize,type)
     %% The actual code needed
     if  obj.DEBUG_BUFFER_REALTIME_FLAG
         
-        [output] = obj.udp.read(byteSize,type);
-%     [output] = read(obj.udp,byteSize,type); 
+        [output] = obj.ReceiverUDP.read(byteSize,type);
+%     [output] = read(obj.ReceiverUDP,byteSize,type); 
 
     end
     

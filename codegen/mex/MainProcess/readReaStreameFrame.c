@@ -31,98 +31,98 @@ static emlrtRSInfo p_emlrtRSI = {
     12,                    /* lineNo */
     "readReaStreameFrame", /* fcnName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\readReaStreameFrame.m" /* pathName */
+    "Standalone Receiver\\readReaStreameFrame.m" /* pathName */
 };
 
 static emlrtRSInfo q_emlrtRSI = {
     14,                    /* lineNo */
     "readReaStreameFrame", /* fcnName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\readReaStreameFrame.m" /* pathName */
+    "Standalone Receiver\\readReaStreameFrame.m" /* pathName */
 };
 
 static emlrtRSInfo r_emlrtRSI = {
     25,                    /* lineNo */
     "readReaStreameFrame", /* fcnName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\readReaStreameFrame.m" /* pathName */
+    "Standalone Receiver\\readReaStreameFrame.m" /* pathName */
 };
 
 static emlrtRSInfo s_emlrtRSI = {
     27,                    /* lineNo */
     "readReaStreameFrame", /* fcnName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\readReaStreameFrame.m" /* pathName */
+    "Standalone Receiver\\readReaStreameFrame.m" /* pathName */
 };
 
 static emlrtRSInfo t_emlrtRSI = {
     35,                    /* lineNo */
     "readReaStreameFrame", /* fcnName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\readReaStreameFrame.m" /* pathName */
+    "Standalone Receiver\\readReaStreameFrame.m" /* pathName */
 };
 
 static emlrtRSInfo u_emlrtRSI = {
     38,                    /* lineNo */
     "readReaStreameFrame", /* fcnName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\readReaStreameFrame.m" /* pathName */
+    "Standalone Receiver\\readReaStreameFrame.m" /* pathName */
 };
 
 static emlrtRSInfo v_emlrtRSI = {
     41,                    /* lineNo */
     "readReaStreameFrame", /* fcnName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\readReaStreameFrame.m" /* pathName */
+    "Standalone Receiver\\readReaStreameFrame.m" /* pathName */
 };
 
 static emlrtRSInfo w_emlrtRSI = {
     45,                    /* lineNo */
     "readReaStreameFrame", /* fcnName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\readReaStreameFrame.m" /* pathName */
+    "Standalone Receiver\\readReaStreameFrame.m" /* pathName */
 };
 
 static emlrtRSInfo x_emlrtRSI = {
     52,                    /* lineNo */
     "readReaStreameFrame", /* fcnName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\readReaStreameFrame.m" /* pathName */
+    "Standalone Receiver\\readReaStreameFrame.m" /* pathName */
 };
 
 static emlrtRSInfo y_emlrtRSI = {
     53,                    /* lineNo */
     "readReaStreameFrame", /* fcnName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\readReaStreameFrame.m" /* pathName */
+    "Standalone Receiver\\readReaStreameFrame.m" /* pathName */
 };
 
 static emlrtRSInfo eb_emlrtRSI = {
     54,              /* lineNo */
     "readUDPbuffer", /* fcnName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\readUDPbuffer.m" /* pathName */
+    "Standalone Receiver\\readUDPbuffer.m" /* pathName */
 };
 
 static emlrtRSInfo jb_emlrtRSI = {
     56,                     /* lineNo */
     "rsFrameHeader2Struct", /* fcnName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\rsFrameHeader2Struct.m" /* pathName */
+    "Standalone Receiver\\rsFrameHeader2Struct.m" /* pathName */
 };
 
 static emlrtRSInfo kb_emlrtRSI = {
     61,                     /* lineNo */
     "rsFrameHeader2Struct", /* fcnName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\rsFrameHeader2Struct.m" /* pathName */
+    "Standalone Receiver\\rsFrameHeader2Struct.m" /* pathName */
 };
 
 static emlrtRSInfo dc_emlrtRSI = {
     56,              /* lineNo */
     "readUDPbuffer", /* fcnName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\readUDPbuffer.m" /* pathName */
+    "Standalone Receiver\\readUDPbuffer.m" /* pathName */
 };
 
 static emlrtRSInfo ec_emlrtRSI = {
@@ -178,7 +178,7 @@ static emlrtBCInfo c_emlrtBCI = {
     "output_",       /* aName */
     "readUDPbuffer", /* fName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\readUDPbuffer.m", /* pName */
+    "Standalone Receiver\\readUDPbuffer.m", /* pName */
     0                                    /* checkKind */
 };
 
@@ -187,7 +187,7 @@ static emlrtDCInfo b_emlrtDCI = {
     49,              /* colNo */
     "readUDPbuffer", /* fName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\readUDPbuffer.m", /* pName */
+    "Standalone Receiver\\readUDPbuffer.m", /* pName */
     1                                    /* checkKind */
 };
 
@@ -199,7 +199,7 @@ static emlrtBCInfo d_emlrtBCI = {
     "output_",       /* aName */
     "readUDPbuffer", /* fName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\readUDPbuffer.m", /* pName */
+    "Standalone Receiver\\readUDPbuffer.m", /* pName */
     0                                    /* checkKind */
 };
 
@@ -208,7 +208,7 @@ static emlrtDCInfo c_emlrtDCI = {
     49,              /* colNo */
     "readUDPbuffer", /* fName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\readUDPbuffer.m", /* pName */
+    "Standalone Receiver\\readUDPbuffer.m", /* pName */
     1                                    /* checkKind */
 };
 
@@ -220,7 +220,7 @@ static emlrtBCInfo e_emlrtBCI = {
     "F",                    /* aName */
     "rsFrameHeader2Struct", /* fName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\rsFrameHeader2Struct.m", /* pName */
+    "Standalone Receiver\\rsFrameHeader2Struct.m", /* pName */
     0                                           /* checkKind */
 };
 
@@ -232,7 +232,7 @@ static emlrtBCInfo f_emlrtBCI = {
     "F",                    /* aName */
     "rsFrameHeader2Struct", /* fName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\rsFrameHeader2Struct.m", /* pName */
+    "Standalone Receiver\\rsFrameHeader2Struct.m", /* pName */
     0                                           /* checkKind */
 };
 
@@ -251,7 +251,7 @@ static emlrtRTEInfo x_emlrtRTEI = {
     5,                     /* colNo */
     "readReaStreameFrame", /* fName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\readReaStreameFrame.m" /* pName */
+    "Standalone Receiver\\readReaStreameFrame.m" /* pName */
 };
 
 static emlrtRTEInfo y_emlrtRTEI = {
@@ -259,7 +259,7 @@ static emlrtRTEInfo y_emlrtRTEI = {
     51,              /* colNo */
     "readUDPbuffer", /* fName */
     "C:\\Users\\JessyJP\\Dropbox\\Projects Workfiles & Software\\ReaStream "
-    "Android Reciever\\readUDPbuffer.m" /* pName */
+    "Standalone Receiver\\readUDPbuffer.m" /* pName */
 };
 
 /* Function Definitions */

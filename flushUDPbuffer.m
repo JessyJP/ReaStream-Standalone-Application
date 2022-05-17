@@ -1,6 +1,6 @@
 function flushUDPbuffer(obj)
     if coder.target('MATLAB')
-        obj.udp.flush();
+        obj.ReceiverUDP.flush();
     end
 	disp('UDP buffer flushed!');
 end

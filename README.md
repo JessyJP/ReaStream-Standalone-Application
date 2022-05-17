@@ -1,4 +1,4 @@
-# ReaStream-Standalone-Reciever
+# ReaStream-Standalone-Receiver
  Application designed to recieve audio from Reastream via the UDP network protocol
 
 App GUI interface:

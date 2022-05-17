@@ -112,7 +112,7 @@ void MainProcess(const char ReaStreamIDtag_data[],
   /*  Debug and interface */
   /*      disp(obj); */
   /*     %% Setup UPD connection    */
-  /*  function [obj] = connectToUDP(obj) */
+  /*  function [obj] = connectReceiverUDP(obj) */
   /*  Setup UPD connection */
   /*     %% Setup the audio device with default settings */
   /*  Check and listen for Frames */

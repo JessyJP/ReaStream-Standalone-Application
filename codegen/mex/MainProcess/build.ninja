@@ -6,7 +6,7 @@ ninja_required_version = 1.3
 root = .
 builddir = $root/build/win64
 matlabdir = D:/Program Files/MATLAB/R2021a
-startdir = C:/Users/JessyJP/Dropbox/Projects Workfiles & Software/ReaStream Android Reciever
+startdir = C:/Users/JessyJP/Dropbox/Projects Workfiles & Software/ReaStream Standalone Receiver
 
 # Toolchain information
 cc = C:\ProgramData\MATLAB\SupportPackages\R2021a\3P.instrset\mingw_w64.instrset\bin\gcc
@@ -14,9 +14,9 @@ cxx = C:\ProgramData\MATLAB\SupportPackages\R2021a\3P.instrset\mingw_w64.instrse
 linker = C:\ProgramData\MATLAB\SupportPackages\R2021a\3P.instrset\mingw_w64.instrset\bin\gcc
 linkerxx = C:\ProgramData\MATLAB\SupportPackages\R2021a\3P.instrset\mingw_w64.instrset\bin\g++
 
-cflags =  -c -fexceptions -fno-omit-frame-pointer -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I "C:\Users\JessyJP\Dropbox\Projects Workfiles & Software\ReaStream Android Reciever\codegen\mex\MainProcess" -I "C:\Users\JessyJP\Dropbox\Projects Workfiles & Software\ReaStream Android Reciever" -I "C:\Users\JessyJP\Dropbox\Projects Workfiles & Software\ReaStream Android Reciever\codegen\mex\MainProcess\interface" -I "D:\Program Files\MATLAB\R2021a\toolbox\shared\spc\src_ml\extern\include" -I "D:\Program Files\MATLAB\R2021a\toolbox\dsp\include" -I "D:\Program Files\MATLAB\R2021a\extern\include" -I "." -DMODEL=MainProcess_mex -D__USE_MINGW_ANSI_STDIO=1  
+cflags =  -c -fexceptions -fno-omit-frame-pointer -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I "C:\Users\JessyJP\Dropbox\Projects Workfiles & Software\ReaStream Standalone Receiver\codegen\mex\MainProcess" -I "C:\Users\JessyJP\Dropbox\Projects Workfiles & Software\ReaStream Standalone Receiver" -I "C:\Users\JessyJP\Dropbox\Projects Workfiles & Software\ReaStream Standalone Receiver\codegen\mex\MainProcess\interface" -I "D:\Program Files\MATLAB\R2021a\toolbox\shared\spc\src_ml\extern\include" -I "D:\Program Files\MATLAB\R2021a\toolbox\dsp\include" -I "D:\Program Files\MATLAB\R2021a\extern\include" -I "." -DMODEL=MainProcess_mex -D__USE_MINGW_ANSI_STDIO=1  
 
-cxxflags =  -c -fexceptions -fno-omit-frame-pointer -std=c++11 -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c++11 -I "C:\Users\JessyJP\Dropbox\Projects Workfiles & Software\ReaStream Android Reciever\codegen\mex\MainProcess" -I "C:\Users\JessyJP\Dropbox\Projects Workfiles & Software\ReaStream Android Reciever" -I "C:\Users\JessyJP\Dropbox\Projects Workfiles & Software\ReaStream Android Reciever\codegen\mex\MainProcess\interface" -I "D:\Program Files\MATLAB\R2021a\toolbox\shared\spc\src_ml\extern\include" -I "D:\Program Files\MATLAB\R2021a\toolbox\dsp\include" -I "D:\Program Files\MATLAB\R2021a\extern\include" -I "." -DMODEL=MainProcess_mex -D__USE_MINGW_ANSI_STDIO=1  
+cxxflags =  -c -fexceptions -fno-omit-frame-pointer -std=c++11 -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c++11 -I "C:\Users\JessyJP\Dropbox\Projects Workfiles & Software\ReaStream Standalone Receiver\codegen\mex\MainProcess" -I "C:\Users\JessyJP\Dropbox\Projects Workfiles & Software\ReaStream Standalone Receiver" -I "C:\Users\JessyJP\Dropbox\Projects Workfiles & Software\ReaStream Standalone Receiver\codegen\mex\MainProcess\interface" -I "D:\Program Files\MATLAB\R2021a\toolbox\shared\spc\src_ml\extern\include" -I "D:\Program Files\MATLAB\R2021a\toolbox\dsp\include" -I "D:\Program Files\MATLAB\R2021a\extern\include" -I "." -DMODEL=MainProcess_mex -D__USE_MINGW_ANSI_STDIO=1  
 
 ldflags =  -m64 -Wl,--no-undefined -shared -static -L"D:\Program Files\MATLAB\R2021a\extern\lib\win64\mingw64" -llibmx -llibmex -llibmat -lm -llibmwlapack -llibmwblas -o "MainProcess_mex.mexw64" -llibemlrt -llibcovrt -llibut -llibmwmathutil  -Wl,--version-script,MainProcess_mex.map
 
