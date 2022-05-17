@@ -83,17 +83,25 @@ obj = ReaStreamTransmitter();
 obj.connectTransmitterUDP();
 
 % Generate test wave
-S = rsFrameHeader2Struct([]);
-    S.streamName  = 'input';
-    S.numChannels = 1;
-    S.SampleRate  = 48000;
 
-disp(S)
+waveGenerate = @(t,FQ) sin(2*pi*FQ*t)
 
-
-
-output_ = rsFrame2UDPbyteArray(S);
-
+for s = 1:1
+    % Make reastream frame
+    S = rsFrameHeader2Struct([]);
+        S.streamName  = 'input';
+        S.numChannels = 1;
+        S.SampleRate  = 48000;
+    
+        SampLenth = 300;
+        dB = -12;
+        t = ([1:SampLenth]+SampLenth*(s-1))/S.SampleRate;
+        S.audioFrameBuff = 10^(dB/20)*waveGenerate(t,440)
+    % Convert to byte array
+    B = rsFrame2UDPbyteArray(S);
+    % Send the buffer to the server
+    sendUDPbuffer(obj,B)
+end
 
 obj.disconnectTransmitterUDP();
  
