@@ -1,27 +1,26 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="4051971552" file="C:\Users\JessyJP\Dropbox\Projects Workfiles &amp; Software\ReaStream-Standalone-Application\ReaStreamReceiverApp.prj" location="C:\Users\JessyJP\Dropbox\Projects Workfiles &amp; Software\ReaStream-Standalone-Application" name="ReaStreamReceiverApp" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="2084540342" file="C:\Users\JessyJP\Dropbox\Projects Workfiles &amp; Software\ReaStream-Standalone-Application\ReaStreamReceiverApp.prj" location="C:\Users\JessyJP\Dropbox\Projects Workfiles &amp; Software\ReaStream-Standalone-Application" name="ReaStreamReceiverApp" target="target.mlapps" target-name="Package App">
     <param.appname>ReaStreamReceiverApp</param.appname>
     <param.authnamewatermark>JessyJP</param.authnamewatermark>
     <param.email />
     <param.company />
     <param.icon />
     <param.icons />
-    <param.summary />
+    <param.summary>Matlab Packageed app</param.summary>
     <param.description />
-    <param.screenshot>C:\Users\JessyJP\AppData\Local\Temp\tp1cc12dd2_c3ff_4c9f_badf_14dd35c6eda3.png</param.screenshot>
+    <param.screenshot>C:\Users\JessyJP\AppData\Local\Temp\tp9d943750_f36b_4f90_b6d6_e76007b6ce0f.png</param.screenshot>
     <param.version>1.0</param.version>
     <param.products.name />
     <param.products.id />
     <param.products.version />
     <param.platforms />
     <param.output>${PROJECT_ROOT}</param.output>
-    <param.guid>ca46691e-36ac-43d9-a7f0-52ca914cbc26</param.guid>
+    <param.guid>6ad92767-a098-424d-9b36-6107f351f333</param.guid>
     <unset>
       <param.email />
       <param.company />
       <param.icon />
       <param.icons />
-      <param.summary />
       <param.description />
       <param.version />
       <param.products.name />
@@ -42,7 +41,6 @@
       <file>${PROJECT_ROOT}\readUDPbuffer.m</file>
       <file>${PROJECT_ROOT}\ReaStreamReceiver.m</file>
       <file>${PROJECT_ROOT}\rsFrameHeader2Struct.m</file>
-      <file>${PROJECT_ROOT}\UDPdataForTesting.mat</file>
     </fileset.depfun>
     <fileset.resources />
     <fileset.package />
