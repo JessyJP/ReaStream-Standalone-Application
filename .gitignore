@@ -1,4 +1,6 @@
 *.asv
+*.mlapp
 /Release/
-/ReaStreamReceiverApp/
+/ReaStreamReceiverStandalone/
+/ReaStreamReceiverServer/
 /codegen/
