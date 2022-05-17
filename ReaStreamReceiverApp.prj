@@ -1,6 +1,6 @@
 <deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
-  <configuration build-checksum="648728865" file="C:\Users\JessyJP\Dropbox\Projects Workfiles &amp; Software\ReaStream-Standalone-Receiver\ReaStreamReceiverApp.prj" location="C:\Users\JessyJP\Dropbox\Projects Workfiles &amp; Software\ReaStream-Standalone-Receiver" name="ReaStreamReceiverApp" preferred-package-location="C:\Users\JessyJP\Dropbox\Projects Workfiles &amp; Software\ReaStream-Standalone-Receiver\ReaStreamReceiverApp\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
-    <param.appname>ReaStreamReceiverApp</param.appname>
+  <configuration build-checksum="648728865" file="C:\Users\JessyJP\Dropbox\Projects Workfiles &amp; Software\ReaStream-Standalone-Application\ReaStreamReceiverApp.prj" location="C:\Users\JessyJP\Dropbox\Projects Workfiles &amp; Software\ReaStream-Standalone-Application" name="ReaStreamReceiverApp" preferred-package-location="C:\Users\JessyJP\Dropbox\Projects Workfiles &amp; Software\ReaStream-Standalone-Receiver\ReaStreamReceiverApp\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
+    <param.appname>ReaStreamResiverApp</param.appname>
     <param.icon />
     <param.icons />
     <param.version>1.0</param.version>
@@ -11,7 +11,7 @@
     <param.description />
     <param.screenshot />
     <param.guid />
-    <param.installpath.string>\ReaStreamReceiverApp\</param.installpath.string>
+    <param.installpath.string>\ReaStreamResiverApp\</param.installpath.string>
     <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
     <param.logo />
     <param.install.notes />
@@ -95,9 +95,9 @@
       <file>${PROJECT_ROOT}\UDPdataForTesting.mat</file>
     </fileset.depfun>
     <build-deliverables>
-      <file location="${PROJECT_ROOT}\ReaStreamReceiverApp\for_testing" name="splash.png" optional="false">C:\Users\JessyJP\Dropbox\Projects Workfiles &amp; Software\ReaStream-Standalone-Receiver\ReaStreamReceiverApp\for_testing\splash.png</file>
-      <file location="${PROJECT_ROOT}\ReaStreamReceiverApp\for_testing" name="ReaStreamReceiverApp.exe" optional="false">C:\Users\JessyJP\Dropbox\Projects Workfiles &amp; Software\ReaStream-Standalone-Receiver\ReaStreamReceiverApp\for_testing\ReaStreamReceiverApp.exe</file>
-      <file location="${PROJECT_ROOT}\ReaStreamReceiverApp\for_testing" name="readme.txt" optional="true">C:\Users\JessyJP\Dropbox\Projects Workfiles &amp; Software\ReaStream-Standalone-Receiver\ReaStreamReceiverApp\for_testing\readme.txt</file>
+      <file location="${PROJECT_ROOT}\ReaStreamReceiverApp\for_testing" name="readme.txt" optional="true">C:\Users\JessyJP\Dropbox\Projects Workfiles &amp; Software\ReaStream-Standalone-Application\ReaStreamReceiverApp\for_testing\readme.txt</file>
+      <file location="${PROJECT_ROOT}\ReaStreamReceiverApp\for_testing" name="ReaStreamResiverApp.exe" optional="false">C:\Users\JessyJP\Dropbox\Projects Workfiles &amp; Software\ReaStream-Standalone-Application\ReaStreamReceiverApp\for_testing\ReaStreamResiverApp.exe</file>
+      <file location="${PROJECT_ROOT}\ReaStreamReceiverApp\for_testing" name="splash.png" optional="false">C:\Users\JessyJP\Dropbox\Projects Workfiles &amp; Software\ReaStream-Standalone-Application\ReaStreamReceiverApp\for_testing\splash.png</file>
     </build-deliverables>
     <workflow />
     <matlab>
