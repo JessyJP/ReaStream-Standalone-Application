@@ -26,7 +26,7 @@ classdef ReaStreamTransmitter  < ReaStreamReceiver
                 disp(obj.TransmitterUDP);     
             end
             obj.UDP_CONNECTION_READY_FLAG = true;
-            disp(' +++ UDP port opened and listening! +++ ');
+            disp(' +++ Open UDP transmission socket! +++ ');
         end
         
         function [obj] = disconnectTransmitterUDP(obj)
@@ -34,7 +34,7 @@ classdef ReaStreamTransmitter  < ReaStreamReceiver
             if coder.target('MATLAB')
                 obj.TransmitterUDP.delete();
             end
-            disp(' --- Stop listening port! --- ');
+            disp(' --- Stop transmission socket! --- ');
             obj.UDP_CONNECTION_READY_FLAG = false;
         end
         

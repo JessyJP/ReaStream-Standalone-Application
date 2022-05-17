@@ -8,11 +8,11 @@ clear all;
     global FLUSH_UDP_BUFFER_FLAG_; 
     FLUSH_UDP_BUFFER_FLAG_ = false;
     
-    global output_ i;
+    global GlobalByteBuffer_ Gi_;
     filename = 'UDPdataForTesting.mat';
-    data = load(filename,'output_');
-    output_ = data.output_;
-    i = 0;    
+    data = load(filename,'GlobalByteBuffer_');
+    GlobalByteBuffer_ = data.GlobalByteBuffer_;
+    Gi_ = 0;    
     
     global myApp;
     % Debug and interface
@@ -44,11 +44,11 @@ return;
 
 %% SaveUDPoutputDataForTesting.m
 tic
-global output_;
-if ~isempty(output_)
+global GlobalByteBuffer_;
+if ~isempty(GlobalByteBuffer_)
     filename = 'UDPdataForTesting.mat';
-    save(filename,'output_');
-    output_ = [];
+    save(filename,'GlobalByteBuffer_');
+    GlobalByteBuffer_ = [];
 end
 toc
 

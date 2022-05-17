@@ -1,13 +1,13 @@
-function [output] = readUDPbuffer(obj,byteSize,type)
-% function [output] = readUDPbuffer(obj,byteSize,type)
+function [byteArrayOUT] = readUDPbuffer(obj,byteSize,type)
+% function [byteArrayOUT] = readUDPbuffer(obj,byteSize,type)
     % Global Declaration FOR RECORD AND PLAYBACK
-    global output_ i STATE_IN_LOOP_FLAG_;    
+    global GlobalByteBuffer_    Gi_     STATE_IN_LOOP_FLAG_;    
 
     %% The actual code needed
     if  obj.DEBUG_BUFFER_REALTIME_FLAG
         
-        [output] = obj.ReceiverUDP.read(byteSize,type);
-%     [output] = read(obj.ReceiverUDP,byteSize,type); 
+        [byteArrayOUT] = obj.ReceiverUDP.read(byteSize,type);
+%     [byteArrayOUT] = read(obj.ReceiverUDP,byteSize,type); 
 
     end
     
@@ -17,43 +17,44 @@ function [output] = readUDPbuffer(obj,byteSize,type)
     if obj.DEBUG_BUFFER_RECORD_FLAG 
         switch (type) 
             case 'uint8'
-                outputRec = typecast(uint8(output),'uint8');
+                byteArrayREC = typecast(uint8(byteArrayOUT),'uint8');
             case 'single'
-                outputRec = typecast(single(output),'uint8');
+                byteArrayREC = typecast(single(byteArrayOUT),'uint8');
             otherwise
                 error('tppe not supported');
         end
         
-        if isempty(output_)
-            output_ = outputRec;
+        if isempty(GlobalByteBuffer_)
+            GlobalByteBuffer_ = byteArrayREC;
         else
-            output_ = [output_ , outputRec];
+            GlobalByteBuffer_ = [GlobalByteBuffer_ , byteArrayREC];
         end
     end
     
     % For reading back data 
     if obj.DEBUG_BUFFER_PLAYBACK_FLAG
         
-        if isempty(output_)
-            i = 0;
+        if isempty(GlobalByteBuffer_)
+            Gi_ = 0;
             filename = 'UDPdataForTesting.mat';
-            data = load(filename,'output_');
-            output_ = data.output_;
+            data = load(filename,'GlobalByteBuffer_');
+            GlobalByteBuffer_ = data.GlobalByteBuffer_;
         end
-        if i+byteSize > numel(output_)
-            i =0;
-            
+        if Gi_+byteSize > numel(GlobalByteBuffer_)
+            % Reset
+            Gi_ =0;
+            % Exit
             STATE_IN_LOOP_FLAG_ = false;
         end
         
         switch (type) 
             case 'uint8'
-                output = typecast(uint8(output_(i+[1:byteSize])),'uint8');
+                byteArrayOUT = typecast(uint8(GlobalByteBuffer_(Gi_+[1:byteSize])),'uint8');
             case 'single'
-                output = typecast(uint8(output_(i+[1:byteSize*4])),'single');
+                byteArrayOUT = typecast(uint8(GlobalByteBuffer_(Gi_+[1:byteSize*4])),'single');
             otherwise
                 error('tppe not supported');
         end
-        i = i + byteSize;
+        Gi_ = Gi_ + byteSize;
     end
 end

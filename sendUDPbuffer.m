@@ -3,9 +3,14 @@ function [output] = sendUDPbuffer(obj,byteArray)
 
 
 %     if  obj.DEBUG_BUFFER_REALTIME_FLAG
-        
-        [output] = obj.TransmitterUDP.write(byteArray);
-%     [output] = read(obj.ReceiverUDP,byteSize,type); 
+        try 
+%             obj.TransmitterUDP.write(byteArray,"uint8");
+            obj.TransmitterUDP.write(byteArray,"uint8");
+        catch
+            obj.TransmitterUDP.write(byteArray,"uint8",...
+                obj.TransmitterUDP.LocalHost,obj.TransmitterUDP.LocalPort);
+        end
+%     [output] = write(obj.ReceiverUDP,byteSize,type); 
 
 %     end
     
