@@ -18,10 +18,10 @@ save(outputfile,"output_");
 %% Run 
 
 obj = ReaStreamReceiver();
-obj.ReaStreamIDtag = 'Reastream Identifier Label';
-obj.DEBUG_BUFFER_REALTIME_FLAG  = false;
-obj.DEBUG_BUFFER_RECORD_FLAG    = false;
-obj.DEBUG_BUFFER_PLAYBACK_FLAG  = true;
+% obj.ReaStreamIDtag = 'Reastream Identifier Label';
+% obj.DEBUG_BUFFER_REALTIME_FLAG  = false;
+% obj.DEBUG_BUFFER_RECORD_FLAG    = false;
+% obj.DEBUG_BUFFER_PLAYBACK_FLAG  = true;
 obj.DEBUG_STORE_FRAME_FLAG = true;
 obj.runMainProcess()
 
@@ -48,7 +48,7 @@ S = makeFrame( ...
 B = rsFrame2UDPbyteArray(S);
 
 % Check the conversion
-ind = numel(B);
+ind = min(numel(B),numel(output_));
 clear TBL;
     TBL.Index = (1:ind)';
     TBL.Original = output_(1:ind)';

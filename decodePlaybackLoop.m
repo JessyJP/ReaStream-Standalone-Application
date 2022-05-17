@@ -10,7 +10,12 @@ function [obj] = decodePlaybackLoop(obj)
 
     if obj.DEBUG_ACTIVEKEYBOARD_INTERRUPT_FLAG
         figh = gcbf;
-        set(figh,'WindowKeyPressFcn',{@RetrieveKeyboardData,obj});
+        if isempty(figh)
+            figh = figure('units','normalized','position',[0,0,0.01,0.01]*2);
+        end
+        figh.UserData = obj;
+%         figh.WindowStyle = 'alwaysontop';
+        set(figh,'WindowKeyPressFcn',@onKeyboardPressCallback);
     end
 
     % Playback Settings
