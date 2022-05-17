@@ -53,18 +53,3 @@ end
 toc
 
 return;
-   
-%% function unitTestScript2()
-% Add Path
-addpath('unitTestInputData\');
-
-% readReaStreameFrame -- UNIT TEST
-load('readReaStreameFrame.mat');
-obj.ReceiverUDP = udpport(...
-    "LocalHost",obj.ReceiverIP,...
-    "LocalPort",obj.Port,...
-    "EnablePortSharing",true,"Timeout",obj.TimeOut);
-
-% Read reastream frame
-[Frame,STATE_FLAG_] = readReaStreameFrame(obj);
-return;
