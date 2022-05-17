@@ -3,7 +3,7 @@ classdef ReaStreamTransmitter  < ReaStreamReceiver
     properties (Access = public)
             % Settings and Properties
             % Connection Properties
-            TransmitterIP = '0.0.0.0';% Default
+            TransmitterIP = 'localhost';% Default
 
             % UDP handle
             TransmitterUDP;% Connection handle

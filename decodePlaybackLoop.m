@@ -8,6 +8,11 @@ function [obj] = decodePlaybackLoop(obj)
     FLUSH_UDP_BUFFER_FLAG_ = false;
     STATE_FLAG_ = obj.PROCESSING_ON_STATE_;
 
+    if obj.DEBUG_ACTIVEKEYBOARD_INTERRUPT_FLAG
+        figh = gcbf;
+        set(figh,'WindowKeyPressFcn',{@RetrieveKeyboardData,obj});
+    end
+
     % Playback Settings
     coder.varsize('playbackBuffer');
     playbackBuffer = single([]);

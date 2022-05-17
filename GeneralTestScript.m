@@ -74,11 +74,26 @@ output_ = rsFrame2UDPbyteArray(S);
 output_ = repmat(output_,1,1);
 save(outputfile,"output_");
 
+return
 %% Transmit Test
-TransmitterIP= "localhost"
+clear obj;
+
+obj = ReaStreamTransmitter();
+
+obj.connectTransmitterUDP();
+
+% Generate test wave
+S = rsFrameHeader2Struct([]);
+    S.streamName  = 'input';
+    S.numChannels = 1;
+    S.SampleRate  = 48000;
+
+disp(S)
 
 
-%% Local Test functions
+
+output_ = rsFrame2UDPbyteArray(S);
 
 
+obj.disconnectTransmitterUDP();
  

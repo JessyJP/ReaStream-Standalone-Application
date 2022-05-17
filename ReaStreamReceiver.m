@@ -25,6 +25,7 @@ classdef ReaStreamReceiver  < handle
             pbSampSize = 128;% Default
             VariableBufferON = true;% Default
             % Buffer for debuging and testing
+            DEBUG_ACTIVEKEYBOARD_INTERRUPT_FLAG = true
             DEBUG_BUFFER_REALTIME_FLAG  = true
             DEBUG_BUFFER_RECORD_FLAG    = false;
             DEBUG_BUFFER_PLAYBACK_FLAG  = false;            
