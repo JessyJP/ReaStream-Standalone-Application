@@ -1,3 +1,4 @@
 *.asv
+/Release/
 /ReaStreamReceiverApp/
 /codegen/
