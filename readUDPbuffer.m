@@ -1,7 +1,7 @@
 function [byteArrayOUT] = readUDPbuffer(obj,byteSize,type)
 % function [byteArrayOUT] = readUDPbuffer(obj,byteSize,type)
     % Global Declaration FOR RECORD AND PLAYBACK
-    global GlobalByteBuffer_    Gi_     STATE_IN_LOOP_FLAG_;    
+    global GlobalByteBuffer_    Gi_  Ri_   STATE_IN_LOOP_FLAG_;    
 
     %% The actual code needed
     if  obj.DEBUG_BUFFER_REALTIME_FLAG
@@ -27,7 +27,12 @@ function [byteArrayOUT] = readUDPbuffer(obj,byteSize,type)
         if isempty(GlobalByteBuffer_)
             GlobalByteBuffer_ = byteArrayREC;
         else
-            GlobalByteBuffer_ = [GlobalByteBuffer_ , byteArrayREC];
+            if not(isempty(Ri_))
+              GlobalByteBuffer_(Ri_+[1:numel(byteArrayREC)]) = byteArrayREC;
+              Ri_ = Ri_ + numel(byteArrayREC);
+            else
+              GlobalByteBuffer_ = [GlobalByteBuffer_ , byteArrayREC];
+            end
         end
     end
     
@@ -50,11 +55,13 @@ function [byteArrayOUT] = readUDPbuffer(obj,byteSize,type)
         switch (type) 
             case 'uint8'
                 byteArrayOUT = typecast(uint8(GlobalByteBuffer_(Gi_+[1:byteSize])),'uint8');
+                Gi_ = Gi_ + byteSize;
             case 'single'
                 byteArrayOUT = typecast(uint8(GlobalByteBuffer_(Gi_+[1:byteSize*4])),'single');
+                Gi_ = Gi_ + byteSize*4;
             otherwise
                 error('tppe not supported');
         end
-        Gi_ = Gi_ + byteSize;
+        
     end
 end
