@@ -1,4 +1,4 @@
-function MainProcess(ReaStreamIDtag,driverSelection,deviceSelection,pbSampSize,VariableBufferON)
+function MainReceptionProcess(ReaStreamIDtag,driverSelection,deviceSelection,pbSampSize,VariableBufferON)
 % function MainProcess()
     % Main Process Script
 

@@ -27,7 +27,7 @@ if true
 
     
     obj = ReaStreamReceiver();
-    % obj.ReaStreamIDtag = 'Reastream Identifier Label';
+    obj.ReaStreamIDtag = 'Reastream Identifier Label';
     obj.DEBUG_BUFFER_REALTIME_FLAG  = false;
 %     obj.DEBUG_BUFFER_RECORD_FLAG    = true;
     obj.DEBUG_BUFFER_PLAYBACK_FLAG  = true;
@@ -43,17 +43,27 @@ if true
     end
         
 
-    obj.runMainProcess()
+    obj.runMainReceptionProcess()
     
     if obj.DEBUG_BUFFER_RECORD_FLAG
         try
             GlobalByteBuffer_(Ri_+1:end) = [];
         end
         save(outputfile,"GlobalByteBuffer_");
-        return
+
+
+        %% Write the data to binary file
+        binOut = "testsong2.txt";
+        
+        fileID = fopen(binOut ,'w');
+        fwrite(fileID,GlobalByteBuffer_,'uint8');
+        fclose(fileID);
     end 
 
 end
+
+
+
 return
 %% Frame Validation
 % clc;

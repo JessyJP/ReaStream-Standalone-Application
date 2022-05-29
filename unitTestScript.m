@@ -38,7 +38,7 @@ clear all;
     MainProcess('ReaperMainOut','DirectSound','Default',128,true)   
 
 %     obj = ReaStreamReceiver(myApp);
-%     obj.runMainProcess();
+    obj.runMainReceptionProcess();
 return;
 
 

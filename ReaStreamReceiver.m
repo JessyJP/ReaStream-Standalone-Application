@@ -71,7 +71,7 @@ classdef ReaStreamReceiver  < handle
         end
         
         % Main Method
-        function [obj] = runMainProcess(obj)
+        function [obj] = runMainReceptionProcess(obj)
 %             profile on
             % Setup UPD connection
             [obj] = connectReceiverUDP(obj);
