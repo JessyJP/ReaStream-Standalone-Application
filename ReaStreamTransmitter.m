@@ -11,6 +11,33 @@ classdef ReaStreamTransmitter  < ReaStreamReceiver
     end
     
     methods (Access = public)
+
+                % Main Method
+        function [obj] = runMainTransmissionProcess(obj)
+%             profile on
+            % Setup UPD connection
+            [obj] = connectReceiverUDP(obj);
+            
+            % Setup the audio device with default settings
+            [obj] = obj.connectToAudioDevice();
+
+            % Run Decode and Playback Loop
+            if obj.UDP_CONNECTION_READY_FLAG && obj.AUDIO_DEVICE_READY_FLAG
+                disp(' +++ Listen for Audio transmissions! +++ ');
+                % profile on
+                obj = decodePlaybackLoop(obj);
+                % profile off
+                % profile viewer
+                disp(' --- Stop Listening for Audio transmissions! --- ');
+            end
+
+            % Release UDP & audio device
+            obj = obj.disconnectReceiverUDP();          
+            obj = obj.disconnectAudioDevice();
+                        
+%            profile off
+%            profile viewer
+        end
         
 
                
