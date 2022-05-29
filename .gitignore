@@ -4,3 +4,12 @@
 /ReaStreamReceiverStandalone/
 /ReaStreamReceiverServer/
 /codegen/
+
+# Testing files
+UDPdataForTesting2.mat
+UDPdataForTesting.mat
+testsong2.txt
+testsong2.bin
+testsong1.txt
+UDPdataForTesting.mat
+UDPdataForTesting.mat
