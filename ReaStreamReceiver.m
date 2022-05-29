@@ -77,7 +77,7 @@ classdef ReaStreamReceiver  < handle
             [obj] = connectReceiverUDP(obj);
             
             % Setup the audio device with default settings
-            [obj] = obj.connectToAudioDevice();
+            [obj] = obj.connectToOutputAudioDevice();
 
             % Run Decode and Playback Loop
             if obj.UDP_CONNECTION_READY_FLAG && obj.AUDIO_DEVICE_READY_FLAG
@@ -91,7 +91,7 @@ classdef ReaStreamReceiver  < handle
 
             % Release UDP & audio device
             obj = obj.disconnectReceiverUDP();          
-            obj = obj.disconnectAudioDevice();
+            obj = obj.disconnectOutputAudioDevice();
                         
 %            profile off
 %            profile viewer
@@ -128,7 +128,7 @@ classdef ReaStreamReceiver  < handle
         end
         
         % Audio Device Methods
-        function [obj] = connectToAudioDevice(obj)
+        function [obj] = connectToOutputAudioDevice(obj)
             % Setup the audio device with default settings
             global STATE_IN_LOOP_FLAG_;
             obj.AUDIO_DEVICE_READY_FLAG = false;
@@ -145,19 +145,19 @@ classdef ReaStreamReceiver  < handle
 
             obj.SampleRate = testFrame.SampleRate;
             % Setup Audio Device Based on the header
-            obj = SetupAudioDevice(obj);
+            obj = SetupOutputAudioDevice(obj);
 
             % Check if audio device is available
             if strcmpi(obj.deviceWriter.Device,'No audio output device detected')
                 disp(' --- Audio device not found!!!! --- ');
-                obj = disconnectAudioDevice(obj);
+                obj = disconnectOutputAudioDevice(obj);
                 % disp(' --- Stop listening port! --- ');
                 obj = obj.disconnectReceiverUDP();
                 return;
             end
         end
         
-        function [obj] = SetupAudioDevice(obj)
+        function [obj] = SetupOutputAudioDevice(obj)
             % Setup Audio Device Based on the header
             if not(obj.AUDIO_DEVICE_READY_FLAG)
 
@@ -179,7 +179,7 @@ classdef ReaStreamReceiver  < handle
             end
         end
         
-        function [obj] = disconnectAudioDevice(obj)
+        function [obj] = disconnectOutputAudioDevice(obj)
             % Release the audio device
             if obj.AUDIO_DEVICE_READY_FLAG
                 disp(' --- Audio device disconnected! --- ');
