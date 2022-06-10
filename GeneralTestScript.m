@@ -19,7 +19,7 @@ if false
     save(outputfile,"GlobalByteBuffer_");
 
 end
-%% Run 
+%% Run Reception
 if true
     global GlobalByteBuffer_ Ri_ Gi_
 
@@ -65,6 +65,28 @@ end
 
 
 return
+
+%% Run Transmission
+if true
+    global GlobalByteBuffer_ Ri_ Gi_
+
+    obj = ReaStreamTransmitter();
+    obj.ReaStreamIDtag = 'Reastream Identifier Label';
+    obj.TransmitterIP = "192.168.0.120"
+%     obj.DEBUG_BUFFER_REALTIME_FLAG  = false;
+%     obj.DEBUG_BUFFER_RECORD_FLAG    = true;
+%     obj.DEBUG_BUFFER_PLAYBACK_FLAG  = true;
+    % obj.DEBUG_STORE_FRAME_FLAG = true;
+        
+
+    obj.runMainReceptionProcess()
+    
+end
+
+
+
+return
+
 %% Frame Validation
 % clc;
 
