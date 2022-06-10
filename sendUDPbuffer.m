@@ -1,5 +1,5 @@
-function [output] = sendUDPbuffer(obj,byteArray)
-% function [output] = sendUDPbuffer(obj,bTransmitteryteSize,type)
+function [] = sendUDPbuffer(obj,byteArray)
+% function [] = sendUDPbuffer(obj,byteArray)
 
 fwrite(obj.TransmitterUDP,byteArray);
 return
