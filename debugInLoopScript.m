@@ -1,10 +1,13 @@
 global DEBUG_ON_LAST_STATE_FLAG_ myApp;
 
 % UI dB meter
+try
+
 myApp.Gauge_L.Value = getAudioBuffer_dB(Frame.audioFrameBuff(:,1));
 if size(Frame.audioFrameBuff,2) > 1
 myApp.Gauge_R.Value = getAudioBuffer_dB(Frame.audioFrameBuff(:,1));
 end
+
 
 % obj = obj;
 % Debug    
@@ -69,4 +72,6 @@ if myApp.DebugONCheckBox.Value
         end
 %         PT(f) = (1000*toc);
 
-    end
+end
+
+end

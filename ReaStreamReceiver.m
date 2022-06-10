@@ -148,7 +148,7 @@ classdef ReaStreamReceiver  < handle
             obj = SetupOutputAudioDevice(obj);
 
             % Check if audio device is available
-            if strcmpi(obj.deviceWriter.Device,'No audio output device detected')
+            if strcmpi(obj.deviceWriter.Device,'No audio device detected')
                 disp(' --- Audio device not found!!!! --- ');
                 obj = disconnectOutputAudioDevice(obj);
                 % disp(' --- Stop listening port! --- ');

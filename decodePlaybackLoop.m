@@ -92,7 +92,7 @@ function [obj] = decodePlaybackLoop(obj)
             % Debug %  IGNORE+++START
             if coder.target('MATLAB')  
                 % Debug Scripts
-%                 debugInLoopScript;
+                debugInLoopScript;
             end
             %  IGNORE+++END
 
