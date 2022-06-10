@@ -8,7 +8,7 @@
     <param.icons />
     <param.summary>Matlab Packageed app</param.summary>
     <param.description />
-    <param.screenshot>C:\Users\JessyJP\AppData\Local\Temp\tp6b23b753_8ef0_4c30_97e0_db57c5dea1c5.png</param.screenshot>
+    <param.screenshot />
     <param.version>1.0</param.version>
     <param.products.name />
     <param.products.id />
@@ -22,6 +22,7 @@
       <param.icon />
       <param.icons />
       <param.description />
+      <param.screenshot />
       <param.version />
       <param.products.name />
       <param.products.id />

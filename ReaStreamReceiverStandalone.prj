@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
-  <configuration file="C:\Users\JessyJP\Dropbox\Projects Workfiles &amp; Software\ReaStream-Standalone-Application\ReaStreamReceiverStandalone.prj" location="C:\Users\JessyJP\Dropbox\Projects Workfiles &amp; Software\ReaStream-Standalone-Application" name="ReaStreamReceiverStandalone" target="target.ezdeploy.standalone" target-name="Application Compiler">
+  <configuration build-checksum="2196088529" file="C:\Users\JessyJP\Dropbox\Projects Workfiles &amp; Software\ReaStream-Standalone-Application\ReaStreamReceiverStandalone.prj" location="C:\Users\JessyJP\Dropbox\Projects Workfiles &amp; Software\ReaStream-Standalone-Application" name="ReaStreamReceiverStandalone" preferred-package-location="C:\Users\JessyJP\Dropbox\Projects Workfiles &amp; Software\ReaStream-Standalone-Application\ReaStreamReceiverStandalone\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
     <param.appname>ReaStreamReceiverStandalone</param.appname>
     <param.icon />
     <param.icons />
@@ -24,8 +24,8 @@
     <param.user.defined.mcr.options />
     <param.target.type>subtarget.standalone</param.target.type>
     <param.support.packages />
-    <param.web.mcr>true</param.web.mcr>
-    <param.package.mcr>false</param.package.mcr>
+    <param.web.mcr>false</param.web.mcr>
+    <param.package.mcr>true</param.package.mcr>
     <param.no.mcr>false</param.no.mcr>
     <param.web.mcr.name>MyAppInstaller_web</param.web.mcr.name>
     <param.package.mcr.name>MyAppInstaller_mcr</param.package.mcr.name>
@@ -64,8 +64,6 @@
       <param.user.defined.mcr.options />
       <param.target.type />
       <param.support.packages />
-      <param.web.mcr />
-      <param.package.mcr />
       <param.no.mcr />
       <param.web.mcr.name />
       <param.package.mcr.name />
@@ -83,15 +81,19 @@
     <fileset.resources />
     <fileset.package />
     <fileset.depfun>
+      <file>${PROJECT_ROOT}\debugInLoopScript.m</file>
       <file>${PROJECT_ROOT}\decodePlaybackLoop.m</file>
       <file>${PROJECT_ROOT}\flushUDPbuffer.m</file>
+      <file>${PROJECT_ROOT}\getAudioBuffer_dB.m</file>
       <file>${PROJECT_ROOT}\Images\nga_workshop_wave_833x469.jpg</file>
-      <file>${PROJECT_ROOT}\MainProcess.m</file>
+      <file>${PROJECT_ROOT}\MainReceptionProcess.m</file>
+      <file>${PROJECT_ROOT}\onKeyboardPressCallback.m</file>
       <file>${PROJECT_ROOT}\readReaStreameFrame.m</file>
       <file>${PROJECT_ROOT}\readUDPbuffer.m</file>
       <file>${PROJECT_ROOT}\ReaStreamReceiver.m</file>
       <file>${PROJECT_ROOT}\rsFrameHeader2Struct.m</file>
       <file>${PROJECT_ROOT}\UDPdataForTesting.mat</file>
+      <file>${PROJECT_ROOT}\updateScopeInLoopScript.m</file>
     </fileset.depfun>
     <build-deliverables>
       <file location="${PROJECT_ROOT}\ReaStreamReceiverStandalone\for_testing" name="ReaStreamReceiverStandalone.exe" optional="false">C:\Users\JessyJP\Dropbox\Projects Workfiles &amp; Software\ReaStream-Standalone-Application\ReaStreamReceiverStandalone\for_testing\ReaStreamReceiverStandalone.exe</file>
